@@ -1,0 +1,318 @@
+body,html{
+  height:100%;
+  min-height: 100%;
+}
+
+body.custom-background {
+   background-color: #1c1f27;
+
+ }
+
+body {
+  background: #fff;
+  color: #556282;
+  font-family: 'Open Sans', arial, helvetica, tahoma, sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  margin:0;
+  padding:0;
+  line-height: 175%;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+
+p { margin-top: 6px; }
+
+img { 
+  border: none; padding:0; 
+}
+
+img a {
+  border:none;
+}
+
+img.left { 
+  float: left; border: none; padding: 6px 0 0 0; 
+}
+
+img.right { 
+  float: right; border: none; padding: 0 0 0 6px; 
+  }
+
+}
+
+code{
+  font-family:"Courier New", Courier, monospace;
+}
+
+
+/* links */
+
+a {
+  color: #556282;
+  text-decoration: underline;
+  -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* container */
+
+#container {
+  width: 100%;
+  float: left;
+  clear: left;
+  overflow: hidden;
+}
+
+#wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+#leftside {
+  width: 230px;
+  float: left;
+  margin-top: 100px;
+  margin-bottom: 60px;
+}
+
+#rightside {
+  width: 50%;
+  float: right;
+  margin-top: 100px;
+  margin-bottom: 60px;
+}
+  
+/* Logo */
+
+#logo { 
+  width: 150%;
+  float:left;
+}
+
+#logo img {
+  margin-bottom: 20px;
+}
+
+#logo a {
+  text-decoration: none;
+}
+
+/* Main Menu */
+
+.mmenu {
+    display: block;
+    font-size: 14px;
+    width: 100%;
+    float: left;
+    clear: left;
+  margin-top: 20px;
+  position: relative;
+}
+
+.mmenu ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+    position: relative;
+    margin: 0;
+    margin-bottom: 10px;
+  display: block;
+}
+
+.mmenu ul li a {
+    display: block;
+    color: #fae5db;
+    padding: 16px 0;
+    text-decoration: none;
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+/* misc */
+
+.entry-content img,
+.comment-content img,
+.widget img {
+  max-width: 100%; /* Fluid images for posts, comments, and widgets */
+}
+img[class*="align"],
+img[class*="wp-image-"],
+img[class*="attachment-"] {
+  height: auto; /* Make sure images with WordPress-added height and width attributes are scaled correctly */
+  max-width: 100%;
+}
+img.size-full,
+img.size-large,
+img.header-image,
+img.wp-post-image,
+img {
+  max-width: 100%;
+  height: auto;
+}
+    
+/* footer */
+
+#footer {
+  width: 100%;
+  float: left;
+  clear: both;
+  padding-bottom: 120px;
+}
+
+#bottomwidgets {
+  width: 100%;
+  float: left;
+  background: #eaeaea;
+  padding-top: 40px;
+}
+
+#bottominner {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+#bottomwidgets .widgets {
+  width: 40%;
+  float: left;
+  margin-bottom: 40px;
+  clear: both;
+}
+
+#bottomwidgets .widgets:nth-child(even) {
+  float: right;
+  clear: none;
+}
+
+#bottomwidgets h2 {
+  font-size: 20px;
+  font-weight: 800;
+  color: #3f3f3f;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+#bottomwidgets ul {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  float: left;
+  clear: left;
+}
+
+#bottomwidgets ul li {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  list-style: none;
+  width: 100%;
+  margin-top: 2px;
+}
+
+#bottomwidgets ul li ul li {
+  border: none;
+  list-style: none;
+  margin-left: 0;
+  margin-top: 2px;
+  float: left;
+  clear: left;
+  width: 100%;
+}
+
+#bottomwidgets ul li a {
+  text-decoration: underline;
+}
+
+#bottomwidgets ul li a:hover {
+  text-decoration: none;
+}
+
+#bottomwidgets a {
+  text-decoration: underline;
+}
+  
+#bottomwidgets a:hover {
+  border: none;
+  text-decoration: none;
+}
+
+/* Social Media Menu */
+
+social .screen-reader-text {
+  position: absolute;
+  top:      -9999em;
+  left:     -9999em;
+}
+
+
+#copyinfo {
+  width: 100%;
+  float: left;
+  text-decoration: none;
+  font-size: 14px;
+  margin-top: 8px;
+  line-height: 100%;
+  clear: both;
+  text-align: center;
+}
+
+#copyinfo a {
+  text-decoration: none;
+}
+
+
+@media screen and (max-width: 768px) {
+  
+  html {
+      -webkit-text-size-adjust: none; 
+  }
+  
+  body {
+    background: #fff;
+  }
+  
+  #leftside {
+    width: 100%;
+  }
+  
+  #rightside {
+    width: 100%;
+    float: left;
+    clear: left;
+    margin-top: 0;
+  }
+  
+  #logo {
+    width: 50%;}
+  
+  .mmenu .nav-bars {
+    left: 98%;
+    top: -90px;
+  }
+  
+}
+
+@media screen and (max-width: 520px) {
+  
+  #logo {
+    width: 50%;
+  }
+  
+  #bottomwidgets .widgets {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
